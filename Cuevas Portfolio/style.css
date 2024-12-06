@@ -1,0 +1,509 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: #111;
+    padding: 20px 50px;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ff4500;
+}
+
+/* Home Section */
+.home-section {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background: #000;
+}
+.home-section h1 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.content h1, .content h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.content .highlight {
+    color: #ff4500;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff4500;
+}
+
+.cv-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #ff4500;
+    border: none;
+    cursor: pointer;
+}
+
+.cv-button:hover {
+    background: #d13c00;
+}
+
+/* Profile Image */
+.image-container {
+    position: relative;
+}
+
+.profile-image {
+    background: #ff4500;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Download CV Button */
+.download-cv-btn {
+    padding: 10px 20px;
+    background-color: #ff4d4d; /* Button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-cv-btn:hover {
+    background-color: #ff1a1a; /* Hover effect */
+}
+
+
+/* About Section Styles */
+.about-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #000;
+    color: #fff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ff6666; /* Matches the red theme */
+}
+
+.line {
+    width: 50px;
+    height: 4px;
+    background-color: #ff6666;
+    margin-bottom: 15px;
+}
+
+.about-content h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.cv-button {
+    padding: 10px 20px;
+    background-color: #ff6666;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #ff4949;
+    transform: translateY(-2px);
+}
+
+
+/* Skills Section Styles */
+.skills-section {
+    height: 100vh;
+    padding: 250px;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+}
+
+.skills-description {
+    max-width: 600px;
+}
+
+.skills-description h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ff6666; /* Matches red theme */
+}
+
+.line {
+    width: 50px;
+    height: 4px;
+    background-color: #ff6666;
+    margin-bottom: 15px;
+}
+
+.skills-description h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.skills-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.experience {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.experience h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #ff6666;
+    margin: 0;
+}
+
+.experience span {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.skills-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill-item {
+    text-align: center;
+    background-color: rgba(255, 102, 102, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.skill-item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ff6666;
+}
+
+.skill-item span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.projects-section {
+    align-items: center;
+    background-color: #000; /* Black background */
+    padding: 250px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    color: #e74c3c; /* Red font color for "Portfolio" title */
+  }
+  
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #e74c3c; /* Red underline to match the title color */
+    margin: 10px auto 0;
+  }
+  
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: #e74c3c; /* Red font color for "My Last Projects" */
+    margin-bottom: 30px;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 0;
+    background-color: black; /* Change background to black */
+    color: white; /* Set text color to white for contrast */
+}
+
+.contact-title {
+    text-align: center; /* Centering the text */
+    color: red; /* Keeping the "Contact Me" text red */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #333; /* Dark background for the form to contrast with black */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: white; /* White text for the labels */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #555; /* Dark background for input fields */
+    color: white; /* White text for input fields */
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Footer */
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+/* Navbar styling for address bar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-bar {
+    display: flex;
+    align-items: center;
+    background-color: #444;
+    border-radius: 8px;
+    padding: 5px 10px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.icon-back, .icon-forward, .icon-reload {
+    color: #bbb;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.icon-back:hover, .icon-forward:hover, .icon-reload:hover {
+    color: #fff;
+}
+
+.address-input {
+    flex-grow: 1;
+    margin: 0 10px;
+    background: transparent;
+    border: none;
+    color: #ccc;
+    font-size: 1rem;
+    text-align: left;
+    pointer-events: none;
+}
+
+.address-input:focus {
+    outline: none;
+}
+
+.site-lock {
+    color: #4caf50;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
